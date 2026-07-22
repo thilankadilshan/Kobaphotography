@@ -1,0 +1,26 @@
+# Dependencies
+node_modules
+.pnpm-store
+.npm
+.yarn
+
+# Local env files
+.env
+.env.*
+!.env.example
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS / editor
+.DS_Store
+.idea
+.vscode
+
+# Astro cache
+.astro/*
+
+# GitHub (we handle CI separately)
+.github/s
