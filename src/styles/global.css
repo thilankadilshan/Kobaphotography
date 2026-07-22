@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  /* KobaPhotography Color Palette */
+  --color-navy: #0a2947;
+  --color-cream: #f3e4c9;
+  --color-sage: #d3d4c0;
+  --color-earth: #8b5e3c;
+
+  /* Semantic aliases */
+  --color-primary: #0a2947;
+  --color-secondary: #8b5e3c;
+  --color-bg: #0a2947;
+  --color-accent: #d3d4c0;
+
+  /* Font families */
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+/* Base styles */
+body {
+  background-color: var(--color-navy);
+  color: var(--color-cream);
+  font-family: var(--font-sans);
+  font-weight: 300;
+}
+
+/* Serif for headings */
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-serif);
+  font-weight: 300;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for cinematic feel */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-navy);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-earth);
+  border-radius: 3px;
+}

@@ -1,0 +1,53 @@
+---
+import '../styles/global.css';
+import Navbar from '../components/astro/Navbar.astro';
+import Footer from '../components/astro/Footer.astro';
+import LoadingScreen from '../components/svelte/LoadingScreen.svelte';
+
+const { title = 'KobaPhotography' } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    
+    <!-- Cinematic Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-navy text-cream antialiased overflow-x-hidden">
+    <!-- Loading Screen -->
+    <LoadingScreen client:load />
+    
+    <!-- Everything below is HIDDEN until loading finishes -->
+    <div id="page-content" class="opacity-0 transition-opacity duration-1000 ease-out">
+      <Navbar />
+      <main>
+        <slot />
+      </main>
+      <Footer />
+    </div>
+  </body>
+</html>
+
+<script>
+  // Wait for loading screen to finish, then reveal everything
+  document.addEventListener('DOMContentLoaded', () => {
+    const content = document.getElementById('page-content');
+    if (!content) return;
+
+    // Hide everything initially
+    content.style.opacity = '0';
+
+    // Listen for loading screen "loaded" event
+    document.addEventListener('loading-done', () => {
+      content.style.opacity = '1';
+      // Trigger hero animations by adding a class
+      document.body.classList.add('page-loaded');
+    });
+  });
+</script>
