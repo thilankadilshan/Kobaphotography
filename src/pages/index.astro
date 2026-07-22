@@ -1,17 +1,21 @@
 ---
-
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSection from '../components/astro/HeroSection.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title="KobaPhotography | Visual Storytelling">
+  <HeroSection />
+  
+  <!-- Placeholder for next sections -->
+  <section id="stories" class="min-h-screen bg-cream flex items-center justify-center">
+    <p class="font-serif text-3xl text-navy/30">Stories section coming...</p>
+  </section>
+  
+  <section id="portfolio" class="min-h-screen bg-sage flex items-center justify-center">
+    <p class="font-serif text-3xl text-navy/30">Portfolio section coming...</p>
+  </section>
+  
+  <section id="about" class="min-h-screen bg-cream flex items-center justify-center">
+    <p class="font-serif text-3xl text-navy/30">About section coming...</p>
+  </section>
+</BaseLayout>
