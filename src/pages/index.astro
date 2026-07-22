@@ -1,16 +1,16 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/astro/HeroSection.astro';
+import FeaturedStories from '../components/svelte/FeaturedStories.svelte';
 ---
 
 <BaseLayout title="KobaPhotography | Visual Storytelling">
   <HeroSection />
   
-  <!-- Placeholder for next sections -->
-  <section id="stories" class="min-h-screen bg-cream flex items-center justify-center">
-    <p class="font-serif text-3xl text-navy/30">Stories section coming...</p>
-  </section>
+  <!-- Featured Stories — Cinematic scattered polaroid cards -->
+  <FeaturedStories client:load />
   
+  <!-- Placeholder for next sections -->
   <section id="portfolio" class="min-h-screen bg-sage flex items-center justify-center">
     <p class="font-serif text-3xl text-navy/30">Portfolio section coming...</p>
   </section>

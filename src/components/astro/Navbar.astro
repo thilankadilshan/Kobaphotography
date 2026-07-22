@@ -18,21 +18,25 @@
       </span>
     </a>
 
-    <!-- Desktop Links -->
+    <!-- Desktop Links — CHANGED FROM #anchors TO /pages -->
     <div class="hidden md:flex items-center gap-10">
-      <a href="#stories" class="nav-link text-cream/70 text-xs tracking-[0.2em] uppercase hover:text-cream transition-colors duration-300 relative group">
+      <a href="/" class="nav-link text-cream/70 text-xs tracking-[0.2em] uppercase hover:text-cream transition-colors duration-300 relative group">
+        Home
+        <span class="absolute -bottom-1 left-0 w-0 h-px bg-earth transition-all duration-300 group-hover:w-full"></span>
+      </a>
+      <a href="/stories" class="nav-link text-cream/70 text-xs tracking-[0.2em] uppercase hover:text-cream transition-colors duration-300 relative group">
         Stories
         <span class="absolute -bottom-1 left-0 w-0 h-px bg-earth transition-all duration-300 group-hover:w-full"></span>
       </a>
-      <a href="#portfolio" class="nav-link text-cream/70 text-xs tracking-[0.2em] uppercase hover:text-cream transition-colors duration-300 relative group">
+      <a href="/portfolio" class="nav-link text-cream/70 text-xs tracking-[0.2em] uppercase hover:text-cream transition-colors duration-300 relative group">
         Portfolio
         <span class="absolute -bottom-1 left-0 w-0 h-px bg-earth transition-all duration-300 group-hover:w-full"></span>
       </a>
-      <a href="#about" class="nav-link text-cream/70 text-xs tracking-[0.2em] uppercase hover:text-cream transition-colors duration-300 relative group">
+      <a href="/about" class="nav-link text-cream/70 text-xs tracking-[0.2em] uppercase hover:text-cream transition-colors duration-300 relative group">
         About
         <span class="absolute -bottom-1 left-0 w-0 h-px bg-earth transition-all duration-300 group-hover:w-full"></span>
       </a>
-      <a href="#contact" class="nav-link text-cream/70 text-xs tracking-[0.2em] uppercase hover:text-cream transition-colors duration-300 relative group">
+      <a href="/contact" class="nav-link text-cream/70 text-xs tracking-[0.2em] uppercase hover:text-cream transition-colors duration-300 relative group">
         Contact
         <span class="absolute -bottom-1 left-0 w-0 h-px bg-earth transition-all duration-300 group-hover:w-full"></span>
       </a>
@@ -49,12 +53,13 @@
     </button>
   </div>
 
-  <!-- Mobile Menu -->
+  <!-- Mobile Menu — CHANGED FROM #anchors TO /pages -->
   <div id="mobile-menu" class="md:hidden fixed inset-0 bg-navy/98 backdrop-blur-xl flex flex-col items-center justify-center gap-8 opacity-0 pointer-events-none transition-all duration-500">
-    <a href="#stories" class="mobile-link font-serif text-cream text-3xl font-light tracking-wide">Stories</a>
-    <a href="#portfolio" class="mobile-link font-serif text-cream text-3xl font-light tracking-wide">Portfolio</a>
-    <a href="#about" class="mobile-link font-serif text-cream text-3xl font-light tracking-wide">About</a>
-    <a href="#contact" class="mobile-link font-serif text-cream text-3xl font-light tracking-wide">Contact</a>
+    <a href="/" class="mobile-link font-serif text-cream text-3xl font-light tracking-wide">Home</a>
+    <a href="/stories" class="mobile-link font-serif text-cream text-3xl font-light tracking-wide">Stories</a>
+    <a href="/portfolio" class="mobile-link font-serif text-cream text-3xl font-light tracking-wide">Portfolio</a>
+    <a href="/about" class="mobile-link font-serif text-cream text-3xl font-light tracking-wide">About</a>
+    <a href="/contact" class="mobile-link font-serif text-cream text-3xl font-light tracking-wide">Contact</a>
   </div>
 </nav>
 

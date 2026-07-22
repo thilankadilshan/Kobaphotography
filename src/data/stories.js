@@ -1,0 +1,107 @@
+// src/data/stories.js
+// All story data — front-end only for now
+
+export const stories = [
+  {
+    id: "tharindu-hansi",
+    slug: "tharindu-hansi",
+    title: "A Little Moment Before a Lifetime Together",
+    subtitle: "A smile, a promise, a forever story.",
+    couple: "Tharindu & Hansi",
+    category: "Wedding",
+    coverImage: "/images/stories/tharindu-hansi/1.jpeg",
+    images: [
+      "/images/stories/tharindu-hansi/1.jpeg",
+      "/images/stories/tharindu-hansi/2.jpeg",
+      "/images/stories/tharindu-hansi/3.jpeg",
+      "/images/stories/tharindu-hansi/4.jpeg",
+      "/images/stories/tharindu-hansi/5.jpeg",
+    ],
+    story: `Every love story has a beginning, and theirs started with a glance that lasted a lifetime. On this beautiful day, Tharindu and Hansi promised each other forever. The morning light filtered through the curtains as Hansi prepared for the most important moment of her life. Tharindu, calm yet excited, waited with a heart full of love.`,
+    credits: [
+      { role: "Bridal Hair & Makeup", name: "Salon D Dammika" },
+      { role: "Groom's Outfit", name: "Asanga Groom's" },
+      { role: "Storyteller", name: "KOBA" },
+    ],
+    date: "2024",
+    location: "Sri Lanka",
+    accentColor: "#8B5E3C",
+    rotation: -3,
+  },
+  {
+    id: "paarindi-lochitha",
+    slug: "paarindi-lochitha",
+    title: "Beneath the City Lights",
+    subtitle: "Two souls, one silent city, an endless story.",
+    couple: "Paarindi & Lochitha",
+    category: "Couple",
+    coverImage: "/images/stories/paarindi-lochitha/1.jpeg",
+    images: [
+      "/images/stories/paarindi-lochitha/1.jpeg",
+      "/images/stories/paarindi-lochitha/2.jpeg",
+      "/images/stories/paarindi-lochitha/3.jpeg",
+      "/images/stories/paarindi-lochitha/4.jpeg",
+      "/images/stories/paarindi-lochitha/5.jpeg",
+    ],
+    story: `Beneath the city lights, the night felt warmer through your eyes. In that moment, it was like the whole world stood still. Even breathing felt like slow motion. With every step, every smile, I could feel that everything in this world truly has meaning. There's no script, no dialogue — yet the sound of our emotions is crystal clear. We're just two souls walking through a silent city, actors in our own story. But this film has no ending. Even when the camera turns off, the feeling never fades. The world's hustle disappears, and the mix of soft lights and cool air makes our love grow even stronger.`,
+    credits: [{ role: "Storyteller", name: "KOBA" }],
+    date: "2024",
+    location: "Colombo, Sri Lanka",
+    accentColor: "#D3D4C0",
+    rotation: 2,
+  },
+  {
+    id: "ranulya",
+    slug: "ranulya",
+    title: "The Story of Ranulya",
+    subtitle: "Pure smiles, frozen in time.",
+    couple: "Ranulya",
+    category: "Portrait",
+    coverImage: "/images/stories/ranulya/1.jpeg",
+    images: [
+      "/images/stories/ranulya/1.jpeg",
+      "/images/stories/ranulya/2.jpeg",
+      "/images/stories/ranulya/3.jpeg",
+      "/images/stories/ranulya/4.jpeg",
+      "/images/stories/ranulya/5.jpeg",
+    ],
+    story: `A small moment flowed naturally, without acting or planning. Ranulya's pure smiles are frozen in this photo today, and tomorrow they will live on as a precious memory. There is something magical about capturing genuine emotion — the kind that cannot be staged or rehearsed. In every frame, Ranulya's spirit shines through, reminding us that the most beautiful moments are the ones that happen when we simply allow ourselves to be.`,
+    credits: [{ role: "Storyteller", name: "KOBA" }],
+    date: "2024",
+    location: "Sri Lanka",
+    accentColor: "#F3E4C9",
+    rotation: -1.5,
+  },
+  {
+    id: "nethmini-viranga",
+    slug: "nethmini-viranga",
+    title: "The Story of Nethmini & Viranga",
+    subtitle: "Simple, yet beautiful. A dream come true.",
+    couple: "Nethmini & Viranga",
+    category: "Wedding",
+    coverImage: "/images/stories/nethmini-viranga/1.jpeg",
+    images: [
+      "/images/stories/nethmini-viranga/1.jpeg",
+      "/images/stories/nethmini-viranga/2.jpeg",
+      "/images/stories/nethmini-viranga/3.jpeg",
+      "/images/stories/nethmini-viranga/4.jpeg",
+      "/images/stories/nethmini-viranga/5.jpeg",
+    ],
+    story: `The story of Nethmini and Viranga is simple, yet beautiful. Their smiles, eyes, way of speaking, and presence are sure to capture anyone's heart. Today is the most beautiful day they have dreamed of for years. The two of them are enjoying this day with so much happiness. Every glance they share speaks volumes, every touch is a promise, and every laugh echoes the joy of two hearts that have finally found their home in each other.`,
+    credits: [
+      { role: "Bridal Hair & Makeup", name: "Hashi Salon" },
+      { role: "Groom's Outfit", name: "Asanga Groom's" },
+      { role: "Groom's Hair & Makeup", name: "Mangalam Salon" },
+      { role: "Photography", name: "KOBA" },
+    ],
+    date: "2024",
+    location: "Sri Lanka",
+    accentColor: "#8B5E3C",
+    rotation: 4,
+  },
+];
+
+// Helper to get a story by slug
+export function getStoryBySlug(slug) {
+  return stories.find((s) => s.slug === slug) || null;
+}
