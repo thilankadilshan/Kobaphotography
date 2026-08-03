@@ -1,0 +1,181 @@
+---
+// src/components/astro/ContactSection.astro
+---
+
+<section id="contact-section" class="relative py-24 md:py-40 overflow-hidden flex items-center" style="background-color: #F3E4C9; min-height: 100vh;">
+  
+  <!-- Massive Cinematic Watermark Background (Dark text, very low opacity) -->
+  <div class="absolute top-1/2 left-0 -translate-y-1/2 w-full overflow-hidden pointer-events-none select-none z-0">
+    <h2 class="contact-watermark font-serif font-bold text-center whitespace-nowrap" style="color: rgba(10, 41, 71, 0.04); font-size: max(15vw, 150px); line-height: 1;">
+      BOOKINGS & INQUIRIES
+    </h2>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10 w-full">
+    <div class="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
+      
+      <!-- Left Column: Cinematic Image -->
+      <div class="w-full lg:w-5/12 flex justify-center lg:justify-start">
+        <div class="contact-image-wrapper relative overflow-hidden rounded-sm w-full max-w-md lg:max-w-full shadow-2xl shadow-black/10" style="aspect-ratio: 3/4;">
+          
+          <img 
+            src="/images/contact.jpg" 
+            alt="Contact Uditha Ruwan" 
+            class="contact-img w-full h-full object-cover transform scale-110"
+          />
+          
+          <!-- Inner elegant frame (Navy) -->
+          <div class="absolute inset-4 border z-20 pointer-events-none" style="border-color: rgba(10, 41, 71, 0.15);"></div>
+        </div>
+      </div>
+
+      <!-- Right Column: Details -->
+      <div class="w-full lg:w-7/12 flex flex-col justify-center">
+        
+        <div class="contact-reveal">
+          <span class="font-sans text-xs md:text-sm tracking-[0.4em] uppercase mb-6 block" style="color: #8B5E3C;">
+            Start Your Chapter
+          </span>
+          <h2 class="font-serif text-5xl md:text-7xl lg:text-8xl font-light leading-none mb-12" style="color: #0A2947;">
+            Let's create <br/>
+            <span class="italic opacity-80" style="color: #8B5E3C;">timeless art.</span>
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 pt-12 border-t" style="border-color: rgba(10, 41, 71, 0.15);">
+          
+          <!-- Packages Column -->
+          <div class="contact-reveal">
+            <h3 class="font-sans text-xs tracking-[0.2em] uppercase mb-6" style="color: #8B5E3C;">Services Available</h3>
+            <ul class="space-y-4 font-serif text-xl md:text-2xl font-light" style="color: #0A2947;">
+              <li class="relative pl-4 before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1 before:h-1 before:rounded-full before:bg-[#8B5E3C]">Wedding Photoshoot</li>
+              <li class="relative pl-4 before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1 before:h-1 before:rounded-full before:bg-[#8B5E3C]">Couple & Pre-Wedding</li>
+              <li class="relative pl-4 before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1 before:h-1 before:rounded-full before:bg-[#8B5E3C]">Birthday Celebrations</li>
+              <li class="relative pl-4 before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1 before:h-1 before:rounded-full before:bg-[#8B5E3C]">Graduation Portraits</li>
+              <li class="relative pl-4 before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1 before:h-1 before:rounded-full before:bg-[#8B5E3C]">Event Coverage</li>
+            </ul>
+          </div>
+
+          <!-- Contact Details Column -->
+          <div class="contact-reveal flex flex-col justify-between">
+            <div>
+              <h3 class="font-sans text-xs tracking-[0.2em] uppercase mb-6" style="color: #8B5E3C;">Get In Touch</h3>
+              
+              <div class="space-y-6">
+                <!-- Email -->
+                <a href="mailto:Kobaphotography4@gmail.com" class="group block font-sans text-sm md:text-base tracking-widest uppercase transition-colors" style="color: #0A2947; opacity: 0.7;">
+                  Email
+                  <span class="block mt-1 font-serif text-lg md:text-xl font-light normal-case group-hover:opacity-100 transition-opacity" style="color: #0A2947;">
+                    Kobaphotography4@gmail.com
+                  </span>
+                </a>
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/94764082469" target="_blank" rel="noopener noreferrer" class="group block font-sans text-sm md:text-base tracking-widest uppercase transition-colors" style="color: #0A2947; opacity: 0.7;">
+                  WhatsApp
+                  <span class="mt-1 font-serif text-lg md:text-xl font-light normal-case flex items-center gap-3 group-hover:opacity-100 transition-opacity" style="color: #0A2947;">
+                    +94 76 408 2469
+                    <svg class="w-5 h-5 transform group-hover:scale-110 transition-transform" style="color: #25D366;" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12.031 0C5.385 0 0 5.385 0 12.031c0 2.128.552 4.17 1.6 5.986L.045 24l6.147-1.61c1.761.954 3.743 1.458 5.839 1.458 6.646 0 12.031-5.385 12.031-12.031S18.677 0 12.031 0zm4.516 17.202c-.19.537-1.096 1.026-1.528 1.074-.42.046-.967.143-3.158-.766-2.651-1.101-4.37-3.805-4.502-3.982-.131-.177-1.074-1.43-1.074-2.73s.68-1.939.923-2.189c.243-.25.525-.313.7-.313.176 0 .351 0 .504.009.16.009.376-.06.58.431.213.515.733 1.789.799 1.921.065.132.109.287.022.464-.088.176-.132.287-.263.441-.132.155-.276.333-.396.465-.132.154-.274.322-.121.587.152.264.677 1.121 1.448 1.808 1.002.893 1.849 1.171 2.113 1.298.263.128.42.105.578-.073.158-.178.68-.792.862-1.063.181-.271.362-.226.602-.137.241.089 1.522.718 1.785.85.263.131.438.196.503.305.065.109.065.632-.125 1.169z"/>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="mt-10 pt-8 border-t flex gap-6" style="border-color: rgba(10, 41, 71, 0.15);">
+              <!-- Facebook -->
+              <a href="https://www.facebook.com/share/1E5HdbBB4j/" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-center w-10 h-10 rounded-full border transition-all duration-300 hover:scale-110 hover:bg-[#0A2947] hover:text-cream" style="border-color: rgba(10, 41, 71, 0.3); color: #0A2947;">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+                </svg>
+              </a>
+              <!-- Instagram -->
+              <a href="https://www.instagram.com/uditha_ruwan?igsh=bWh1ZzI3em12NDMy" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-center w-10 h-10 rounded-full border transition-all duration-300 hover:scale-110 hover:bg-[#0A2947] hover:text-cream" style="border-color: rgba(10, 41, 71, 0.3); color: #0A2947;">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  // @ts-nocheck
+  document.addEventListener('DOMContentLoaded', () => {
+    if (typeof window.gsap !== 'undefined' && typeof window.ScrollTrigger !== 'undefined') {
+      const { gsap, ScrollTrigger } = window;
+      gsap.registerPlugin(ScrollTrigger);
+
+      // 1. Watermark slow parallax
+      gsap.fromTo('.contact-watermark', 
+        { x: '-10%' },
+        { 
+          x: '5%',
+          ease: 'none',
+          scrollTrigger: {
+            trigger: '#contact-section',
+            start: 'top bottom',
+            end: 'bottom top',
+            scrub: 1
+          }
+        }
+      );
+
+      // 2. Cinematic Image Reveal (Failsafe curtain reveal without visibility:hidden)
+      gsap.fromTo('.contact-image-wrapper',
+        { 
+          clipPath: 'polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)' 
+        },
+        {
+          clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
+          duration: 1.5,
+          ease: 'power4.inOut',
+          scrollTrigger: {
+            trigger: '#contact-section',
+            start: 'top 75%',
+          }
+        }
+      );
+
+      // 3. Image subtle Parallax inside the frame
+      gsap.fromTo('.contact-img',
+        { y: '-10%', scale: 1.15 },
+        {
+          y: '10%',
+          scale: 1,
+          ease: 'none',
+          scrollTrigger: {
+            trigger: '.contact-image-wrapper',
+            start: 'top bottom',
+            end: 'bottom top',
+            scrub: 1.5
+          }
+        }
+      );
+
+      // 4. Staggered Text Reveal for the right side
+      gsap.fromTo('.contact-reveal',
+        { y: 40, opacity: 0 },
+        {
+          y: 0, 
+          opacity: 1, 
+          stagger: 0.2, 
+          duration: 1.2, 
+          ease: 'power3.out',
+          scrollTrigger: {
+            trigger: '.contact-image-wrapper',
+            start: 'top 70%',
+          }
+        }
+      );
+    }
+  });
+</script>
